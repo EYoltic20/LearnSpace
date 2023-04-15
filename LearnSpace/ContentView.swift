@@ -9,8 +9,20 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
+    @State var nivel = 0
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        if nivel == 0 {
+            Text("Diego Puto")
+            Button{
+                nivel+=1
+            }label: {
+                Text("cambiar")
+            }
+        }
+        else{
+            ARViewContainer().edgesIgnoringSafeArea(.all)
+        }
+        
     }
 }
 
@@ -18,15 +30,7 @@ struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
         
-        let arView = ARView(frame: .zero)
         
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
-        
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
-        
-        return arView
         
     }
     

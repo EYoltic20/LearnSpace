@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2E1596FC29EB386A008788F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1596FB29EB386A008788F5 /* AppDelegate.swift */; };
 		2E1596FE29EB386A008788F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1596FD29EB386A008788F5 /* ContentView.swift */; };
-		2E15970029EB386A008788F5 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 2E1596FF29EB386A008788F5 /* Experience.rcproject */; };
 		2E15970229EB386C008788F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E15970129EB386C008788F5 /* Assets.xcassets */; };
 		2E15970529EB386C008788F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E15970429EB386C008788F5 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		2E1596F829EB386A008788F5 /* LearnSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1596FB29EB386A008788F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E1596FD29EB386A008788F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2E1596FF29EB386A008788F5 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		2E15970129EB386C008788F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E15970429EB386C008788F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,7 +53,6 @@
 			children = (
 				2E1596FB29EB386A008788F5 /* AppDelegate.swift */,
 				2E1596FD29EB386A008788F5 /* ContentView.swift */,
-				2E1596FF29EB386A008788F5 /* Experience.rcproject */,
 				2E15970129EB386C008788F5 /* Assets.xcassets */,
 				2E15970329EB386C008788F5 /* Preview Content */,
 			);
@@ -142,7 +139,6 @@
 			files = (
 				2E1596FE29EB386A008788F5 /* ContentView.swift in Sources */,
 				2E1596FC29EB386A008788F5 /* AppDelegate.swift in Sources */,
-				2E15970029EB386A008788F5 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
