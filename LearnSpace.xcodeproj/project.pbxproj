@@ -21,6 +21,7 @@
 		2E3FB67E29EDDD1100E5B160 /* book.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2E3FB67D29EDDD1100E5B160 /* book.usdz */; };
 		2E3FB68029EDF1C300E5B160 /* gemu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3FB67F29EDF1C200E5B160 /* gemu.ttf */; };
 		2E8D71C929ED8AFC0084F566 /* PreguntaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8D71C829ED8AFC0084F566 /* PreguntaView.swift */; };
+		2ECCE0EA29EDFBA8005B5132 /* toy_pane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2ECCE0E929EDFBA8005B5132 /* toy_pane.usdz */; };
 		2EE218AA29EB8FCB00986A21 /* PreguntasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE218A929EB8FCB00986A21 /* PreguntasModel.swift */; };
 		2EE218AC29EB92B800986A21 /* animacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE218AB29EB92B800986A21 /* animacion.swift */; };
 		2EE218AF29EB92F400986A21 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2EE218AE29EB92F400986A21 /* Lottie */; };
@@ -42,6 +43,7 @@
 		2E3FB67D29EDDD1100E5B160 /* book.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = book.usdz; sourceTree = "<group>"; };
 		2E3FB67F29EDF1C200E5B160 /* gemu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gemu.ttf; sourceTree = "<group>"; };
 		2E8D71C829ED8AFC0084F566 /* PreguntaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreguntaView.swift; sourceTree = "<group>"; };
+		2ECCE0E929EDFBA8005B5132 /* toy_pane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_pane.usdz; sourceTree = "<group>"; };
 		2EE218A929EB8FCB00986A21 /* PreguntasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreguntasModel.swift; sourceTree = "<group>"; };
 		2EE218AB29EB92B800986A21 /* animacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animacion.swift; sourceTree = "<group>"; };
 		2EE7141C29EBA461009AE3F2 /* Quicksand.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand.ttf; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				2EE7141D29EBA4A1009AE3F2 /* Info.plist */,
+				2ECCE0E929EDFBA8005B5132 /* toy_pane.usdz */,
 				2EE7141C29EBA461009AE3F2 /* Quicksand.ttf */,
 				2E3FB67F29EDF1C200E5B160 /* gemu.ttf */,
 				2E3FB67929ED947800E5B160 /* tree3.usd */,
@@ -190,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ECCE0EA29EDFBA8005B5132 /* toy_pane.usdz in Resources */,
 				2E3FB67A29ED947800E5B160 /* tree3.usd in Resources */,
 				2E3FB67829ED947100E5B160 /* palm3.usd in Resources */,
 				2E3FB67E29EDDD1100E5B160 /* book.usdz in Resources */,

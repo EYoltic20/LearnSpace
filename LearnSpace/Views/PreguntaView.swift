@@ -34,7 +34,9 @@ struct PreguntaView: View {
                             if(comprobarRespuesta(alumnRespuesta: opciones[0], respuesta: respuesta)){
                                 buttonState = 1
                                 score += 1
-                                nivel = "Tierra"
+                                DispatchQueue.main.asyncAfter(deadline: .now()+2.0){
+                                    nivel = "Tierra"
+                                }
                             }
                         }label: {
                             RoundedRectangle(cornerRadius: 10)
@@ -51,7 +53,10 @@ struct PreguntaView: View {
                             if(comprobarRespuesta(alumnRespuesta: opciones[1], respuesta: respuesta)){
                                 buttonState = 2
                                 score += 1
-                                nivel = "Tierra"
+                                DispatchQueue.main.asyncAfter(deadline: .now()+2.0){
+                                    nivel = "Tierra"
+                                }
+                                
                                 
                             }
                             
@@ -72,7 +77,9 @@ struct PreguntaView: View {
                             if(comprobarRespuesta(alumnRespuesta: opciones[2], respuesta: respuesta)){
                                 buttonState = 3
                                 score += 1
-                                nivel = "Tierra"
+                                DispatchQueue.main.asyncAfter(deadline: .now()+2.0){
+                                    nivel = "Tierra"
+                                }
                             }
                             
                         }label: {
@@ -90,7 +97,9 @@ struct PreguntaView: View {
                             if(comprobarRespuesta(alumnRespuesta: opciones[3], respuesta: respuesta)){
                                 buttonState = 4
                                 score += 1
-                                nivel = "Tierra"
+                                DispatchQueue.main.asyncAfter(deadline: .now()+2.0){
+                                    nivel = "Tierra"
+                                }
                             }
                         }label: {
                             RoundedRectangle(cornerRadius: 10)

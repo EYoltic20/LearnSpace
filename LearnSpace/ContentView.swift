@@ -153,17 +153,27 @@ struct ARViewContainer: UIViewRepresentable {
         
         let numEntities = 20
         for _ in 0..<numEntities {
-            guard let modelEntity = try? ModelEntity.load(named: names.randomElement()!) else {
+            guard let modelEntity = try? ModelEntity.load(named: "\(names.randomElement()!).usd") else {
                 continue
             }
-            
+
             let randomX = Float.random(in: -20.0...20.0)
             let randomZ = Float.random(in: -20.0...20.0)
             modelEntity.position = [randomX, -5, randomZ]
-            
-            
+
+
             anchor.addChild(modelEntity)
-            arView.scene.anchors.append(anchor)
+            arView.scene.addAnchor(anchor)
+        }
+        for _ in 0..<6{
+            let plane_name = "toy_pane"+".usdz"
+            let planeEntity = try! ModelEntity.loadModel(named: plane_name)
+            let randomX = Float.random(in: -10.0...10.0)
+            let randomZ = Float.random(in: -10.0...10.0)
+            let randomY = Float.random(in: -5...5)
+            planeEntity.position = [randomX,randomY,randomZ]
+            anchor.addChild(planeEntity)
+            arView.scene.addAnchor(anchor)
         }
         
         for i in 0..<4{
