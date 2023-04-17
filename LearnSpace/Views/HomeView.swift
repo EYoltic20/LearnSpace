@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @Binding var nivel : String
-    @State var isActive = UserDefaults.standard.value(forKey: "isActive") ?? true
+    @State var isActive = true
     var planetas : [PlanetaModel] = [
         PlanetaModel(nombre: "Tierra", color: .cyan, image: "planeta-tierra",dificultad: 1),
         PlanetaModel(nombre: "Marte", color: .red, image: "marte",dificultad: 3)
@@ -17,13 +17,15 @@ struct HomeView: View {
     @State var op = 0.0
     var body: some View {
         GeometryReader{geo in
-            NavigationView{
+            VStack{
+                
+                
                 //                MARK: -SPLASHSCREEN
-                if isActive as! Bool{
+                if isActive {
                     VStack{
                         Text("LearnSpace")
-                            
-                            .font(Font.custom("Quicksand", size: 60))
+                        
+                            .font(Font.custom("gemu", size: 60))
                             .foregroundColor(.white.opacity(op))
                             .bold()
                             .padding(.bottom,160)
@@ -33,7 +35,7 @@ struct HomeView: View {
                                 }
                             }
                         
-                            
+                        
                         animacion(url: "https://assets4.lottiefiles.com/packages/lf20_hvlfn70n.json")
                             .frame(width: geo.size.width-100,height: geo.size.height/3)
                         
@@ -41,13 +43,13 @@ struct HomeView: View {
                         .background{
                             Color.black.ignoresSafeArea()
                         }
-                        
+                    
                 }
                 //                MARK: -HOMEVIEW
                 else{
                     VStack(alignment:.leading){
                         Text("Exploremos El Universo")
-                            .font(.system(size: 40))
+                            .font(Font.custom("gemu", size: 40))
                             .font(.title)
                             .foregroundColor(.white)
                             .bold()
@@ -73,10 +75,11 @@ struct HomeView: View {
                             .ignoresSafeArea()
                     }
                 }
-                
-            }.onAppear{
+            }
+            .frame(width: geo.size.width,height: geo.size.height)
+            .onAppear{
                 DispatchQueue.main.asyncAfter(deadline: .now()+4.0){
-                    UserDefaults.standard.set(false, forKey: "isActive")
+                    isActive = false
                 }
             }
             
