@@ -165,17 +165,7 @@ struct ARViewContainer: UIViewRepresentable {
             anchor.addChild(modelEntity)
             arView.scene.addAnchor(anchor)
         }
-        for _ in 0..<6{
-            let plane_name = "toy_pane"+".usdz"
-            let planeEntity = try! ModelEntity.loadModel(named: plane_name)
-            let randomX = Float.random(in: -10.0...10.0)
-            let randomZ = Float.random(in: -10.0...10.0)
-            let randomY = Float.random(in: -5...5)
-            planeEntity.position = [randomX,randomY,randomZ]
-            anchor.addChild(planeEntity)
-            arView.scene.addAnchor(anchor)
-        }
-        
+
         for i in 0..<4{
             let mesh = MeshResource.generateBox(width: 2, height: 2, depth: 2)
             
